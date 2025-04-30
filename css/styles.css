@@ -21,37 +21,6 @@ header {
     justify-content: space-between;
 }
 
-nav {
-    align-content: center;
-}
-
-nav a {
-    all: unset;
-}
-
-nav a:hover {
-    border-bottom: 2px solid #EC6231;
-    cursor: pointer;
-}
-
-.underlined-orange {
-    border-bottom: 2px solid #EC6231;
-}
-
-
-.menu {
-    display: flex;
-    list-style: none;
-}
-
-li {
-    margin-left: 35px;
-}
-
-hr {
-    color:#999999;
-}
-
 h1 {
     font-family: "Roboto Mono", monospace;
     font-size: 40px;
@@ -70,6 +39,65 @@ h1 {
     color: #DABD00;
 }
 
+nav {
+    align-content: center;
+}
+
+nav a {
+    all: unset;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #EC6231;
+    cursor: pointer;
+}
+
+.underlined-orange {
+    border-bottom: 2px solid #EC6231;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    margin-left: 35px;
+}
+
+hr {
+    color:#999999;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px 0 50px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.main-container section {
+    width: 48%;
+}
+
+article p {
+    margin-top: 15px;
+}
+
+.carousel {
+    border: 2px solid #333333;
+    border-radius: 15px;
+}
+
 footer {
+    margin-top: 40px;
     font-family: "Roboto Mono", monospace;
+}
+
+footer p {
+    margin: 25px 0 25px 0;
+    text-align: center;
 }
