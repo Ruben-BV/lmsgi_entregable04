@@ -15,9 +15,16 @@
             <h1>Recursos de <span class="orange">HTML</span>, <span class="blue">CSS</span> y <span class="yellow">JS</span></h1>
             <nav>
                 <ul class="menu">
-                    <li><a href="index.html" class="underlined-orange">Inicio</a></li>
-                    <li><a href="pages/recursos.html">Recursos</a></li>
-                    <li><a href="pages/contacto.html">Contacto</a></li>
+                    <li><a href="index.html" class="menu-button underlined-orange">Inicio</a></li>
+                    <div id="dropdownContainer" class="dropdown-container">
+                        <li class="dropdown-button"><a href="pages/recursos.html" class="menu-button">Recursos</a></li>
+                        <div id="dropdown" class="dropdown hidden">
+                            <a href="pages/recursos/recursos-html.html" class="dropdown-button-html">HTML</a>
+                            <a href="pages/recursos/recursos-css.html" class="dropdown-button-css">CSS</a>
+                            <a href="pages/recursos/recursos-js.html" class="dropdown-button-js">JavaScript</a>
+                        </div>
+                    </div>
+                    <li><a href="pages/contacto.html" class="menu-button">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -43,6 +50,7 @@
         <hr>
         <p>LMSGI - Entregable 04 - R. Blanco</p>
     </footer>
-    <script src="carousel.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/dropdown.js"></script>
 </body>
 </html>

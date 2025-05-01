@@ -47,7 +47,7 @@ nav a {
     all: unset;
 }
 
-nav a:hover {
+.menu-button:hover {
     border-bottom: 2px solid #EC6231;
     cursor: pointer;
 }
@@ -63,6 +63,47 @@ nav a:hover {
 
 li {
     margin-left: 35px;
+}
+
+.dropdown {
+    position: absolute;
+    border: 2px solid #999999;
+    border-radius: 5px;
+    margin-top: 5px;
+    background: #FCFCFC;
+    margin-left: 35px;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.dropdown a {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: #333333;
+}
+
+.dropdown-button-html:hover {
+    color: #EC6231;
+    cursor: pointer;
+}
+
+.dropdown-button-css:hover {
+    color: #2965F1;
+    cursor: pointer;
+}
+
+.dropdown-button-js:hover {
+    color: #DABD00;
+    cursor: pointer;
 }
 
 hr {
