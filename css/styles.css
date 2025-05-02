@@ -25,6 +25,9 @@ h1 {
     font-family: "Roboto Mono", monospace;
     font-size: 40px;
     font-weight: bold;
+    align-items: center;
+    align-content: center;
+
 }
 
 .orange {
@@ -37,6 +40,10 @@ h1 {
 
 .yellow {
     color: #DABD00;
+}
+
+.hamburger, .exit {
+    display: none;
 }
 
 nav {
@@ -141,4 +148,95 @@ footer {
 footer p {
     margin: 25px 0 25px 0;
     text-align: center;
+}
+
+
+@media screen and (max-width: 1050px) {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: #FCFCFC;
+    }
+
+    main {
+        margin-top: 140px;
+    }
+    
+    .hamburger {
+        all: unset;
+        display: block;
+        align-items: center;
+    }
+
+    .hamburger img {
+        width: 30px;
+        display: block;
+    }
+
+    .hamburger:hover {
+        cursor: pointer;
+    }
+
+    nav {
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 30px 30px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        background-color: #333333;
+        border-radius: 5px;
+    }
+
+    nav .visible {
+        visibility: visible;
+    }
+
+    nav .hidden {
+        visibility: hidden;
+    }
+
+    nav ul {
+        padding: 0 50px 50px 50px;
+    }
+
+    .exit {
+        all: unset;
+        display: block;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .exit img {
+        width: 30px;
+        display: block;
+    }
+
+    .exit:hover {
+        cursor: pointer;
+    }
+
+    li {
+        margin-left: 0px;
+        padding: 15px;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu li a {
+        color: #FCFCFC;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 20px;
+    }
 }
