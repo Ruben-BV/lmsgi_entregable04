@@ -44,13 +44,49 @@
                 </article>
             </section>
             <section class="carousel">
-                
+                <a href="recursos/recursos-html.html">
+                <div id="slide01" class="slide slide-visible">
+                    <img src="assets/HTML5_logo_black.svg" alt="Logotipo de HTML">
+                    <h3>Recursos de HTML</h3>
+                </div>
+                </a>
+                <a href="recursos/recursos-css.html">
+                <div id="slide02" class="slide slide-hidden">
+                    <img src="assets/CSS3_logo_and_wordmark.svg" alt="Logotipo de CSS">
+                    <h3>Recursos de CSS</h3>
+                </div>
+                </a>
+                <a href="recursos/recursos-js.html">
+                <div id="slide03" class="slide slide-hidden">
+                    <img src="assets/Unofficial_JavaScript_logo_2.svg" alt="Logotipo de JS">
+                    <h3>Recursos de JavaScript</h3>
+                </div>
+                </a>
+                <hr class="hr-carousel">
+                <div class="carousel-nav">
+                    <button id="prev"><img src="assets/arrow_prev.svg" alt="Flecha diapositiva previa"></button>
+                    <ul class="dots">
+                        <li class="active-slide"></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <button id="next"><img src="assets/arrow_next.svg" alt="Flecha diapositiva siguiente"></button>
+                </div>
+            </div>
             </section>
         </div>
     </main>
     <footer>
         <hr>
         <p>LMSGI - Entregable 04 - R. Blanco</p>
+        <div class="attributions">
+            <p>Imágenes usadas bajo licencia o marca registrada:</p>
+            <p>Logotipo de HTML: <a href="https://commons.wikimedia.org/wiki/File:HTML5_logo_black.svg" target="_blank">W3C</a>, <a href="https://creativecommons.org/licenses/by/3.0" target="_blank">CC BY 3.0</a>, via Wikimedia Commons</p>
+            <p>Logotipo de CSS: <a href="https://commons.wikimedia.org/wiki/File:CSS3_logo_and_wordmark.svg" target="_blank">Rudloff</a>, <a href="https://creativecommons.org/licenses/by/3.0" target="_blank">CC BY 3.0</a>, via Wikimedia Commons</p>
+            <p>Logotipo de JS: <a href="https://commons.wikimedia.org/wiki/File:Unofficial_JavaScript_logo_2.svg" target="_blank">Christopher Williams</a>, Public domain, via Wikimedia Commons - Cambios: esquinas redondeadas</p>
+        </div>
+        </p>
+        
     </footer>
     <script src="js/carousel.js"></script>
     <script src="js/dropdown.js"></script>
