@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recursos HTML-CSS-JS</title>
+    <title>Galería de recursos HTML-CSS-JS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/styles_index.css">
+    <link rel="stylesheet" href="css/styles_recursos.css">
 </head>
 <body>
     <header>
@@ -34,47 +34,25 @@
         <hr>
     </header>
     <main>
-        <div class="main-container">
-            <section class="introduction">
-                <h2>Inicio</h2>
-                <article>
-                    <p>Esta página web tiene como objetivo ofrecer diversos recursos de los tres lenguajes fundamentales que forman la base de cualquier sitio web moderno: HTML, CSS y JavaScript.</p>
-                    <p>HTML (HyperText Markup Language) es el lenguaje de marcado que estructura el contenido en la web. Gracias a él, podemos definir encabezados, párrafos, listas, imágenes, enlaces y mucho más. Es, por así decirlo, el esqueleto de toda página web.</p>
-                    <p>CSS (Cascading Style Sheets): se encarga del diseño visual. Permite aplicar estilos al contenido estructurado con HTML: colores, fuentes, adaptabilidad a distintos dispositivos, etc.</p>
-                    <p>JavaScript: aporta dinamismo e interactividad. Con él, una página deja de ser estática y puede responder a acciones del usuario, validar formularios o mostrar animaciones, entre otros.</p>
-                </article>
-            </section>
-            <section class="carousel">
+        <div class="gallery">
+            <div class="gallery-item">
                 <a href="recursos/recursos-html.html">
-                    <div id="slide01" class="slide slide-visible">
-                        <img src="assets/HTML5_logo_black.svg" alt="Logotipo de HTML">
-                        <h3>Recursos de HTML</h3>
-                    </div>
+                    <img src="assets/HTML5_logo_black.svg" alt="Logotipo de HTML">
+                    <h3>Recursos de HTML</h3>
                 </a>
-                <a href="recursos/recursos-css.html">
-                    <div id="slide02" class="slide slide-hidden">
-                        <img src="assets/CSS3_logo_and_wordmark.svg" alt="Logotipo de CSS">
-                        <h3>Recursos de CSS</h3>
-                    </div>
-                </a>
-                <a href="recursos/recursos-js.html">
-                    <div id="slide03" class="slide slide-hidden">
-                        <img src="assets/Unofficial_JavaScript_logo_2.svg" alt="Logotipo de JS">
-                        <h3>Recursos de JavaScript</h3>
-                    </div>
-                </a>
-                <hr class="hr-carousel">
-                <div class="carousel-nav">
-                    <button id="prev"><img src="assets/arrow_prev.svg" alt="Flecha diapositiva previa"></button>
-                    <ul class="dots">
-                        <li class="dotA active-slide"></li>
-                        <li class="dotB"></li>
-                        <li class="dotC"></li>
-                    </ul>
-                    <button id="next"><img src="assets/arrow_next.svg" alt="Flecha diapositiva siguiente"></button>
-                </div>
             </div>
-            </section>
+            <div class="gallery-item">
+                <a href="recursos/recursos-css.html">
+                    <img src="assets/CSS3_logo_and_wordmark.svg" alt="Logotipo de CSS">
+                    <h3>Recursos de JavaScript</h3>
+                </a>
+            </div>
+            <div class="gallery-item gallery-item-03">
+                <a href="recursos/recursos-js.html">
+                    <img src="assets/Unofficial_JavaScript_logo_2.svg" alt="Logotipo de JS">
+                    <h3>Recursos de JavaScript</h3>
+                </a>
+            </div>
         </div>
     </main>
     <footer>
