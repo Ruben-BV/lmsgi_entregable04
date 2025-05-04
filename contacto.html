@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería de recursos HTML-CSS-JS</title>
+    <title>Contacto</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/styles_recursos.css">
+    <link rel="stylesheet" href="css/styles_contacto.css">
 </head>
 <body>
     <header>
@@ -18,7 +18,7 @@
             <nav id="nav">
                 <button id="exit" class="exit"><img src="assets/exit.svg" alt="Menu Exit"></button>
                 <ul class="menu">
-                    <li><a href="index.html" class="menu-button underlined-orange">Inicio</a></li>
+                    <li><a href="index.html" class="menu-button">Inicio</a></li>
                     <div id="dropdownContainer" class="dropdown-container">
                         <li class="dropdown-button"><a href="recursos.html" class="menu-button">Recursos</a></li>
                         <div id="dropdown" class="dropdown hidden">
@@ -27,47 +27,23 @@
                             <a href="recursos/recursos-js.html" class="dropdown-button-js">JavaScript</a>
                         </div>
                     </div>
-                    <li><a href="contacto.html" class="menu-button">Contacto</a></li>
+                    <li><a href="contacto.html" class="menu-button  underlined-orange">Contacto</a></li>
                 </ul>
             </nav>
         </div>
         <hr>
     </header>
     <main>
-        <div class="gallery">
-            <div class="gallery-item">
-                <a href="recursos/recursos-html.html">
-                    <img src="assets/HTML5_logo_black.svg" alt="Logotipo de HTML">
-                    <h3>Recursos de HTML</h3>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <a href="recursos/recursos-css.html">
-                    <img src="assets/CSS3_logo_and_wordmark.svg" alt="Logotipo de CSS">
-                    <h3>Recursos de JavaScript</h3>
-                </a>
-            </div>
-            <div class="gallery-item gallery-item-03">
-                <a href="recursos/recursos-js.html">
-                    <img src="assets/Unofficial_JavaScript_logo_2.svg" alt="Logotipo de JS">
-                    <h3>Recursos de JavaScript</h3>
-                </a>
-            </div>
+        <div class="main-container">
+            <h2>Contacto</h2>
+            <p class="p-h2">A través del siguiente formulario puedes enviarnos tus preguntas y sugerencias:</p>
+            <form action=""></form>
         </div>
     </main>
     <footer>
         <hr>
         <p>LMSGI - Entregable 04 - R. Blanco</p>
-        <div class="attributions">
-            <p>Imágenes usadas bajo licencia o marca registrada:</p>
-            <p>Logotipo de HTML: <a href="https://commons.wikimedia.org/wiki/File:HTML5_logo_black.svg" target="_blank">W3C</a>, <a href="https://creativecommons.org/licenses/by/3.0" target="_blank">CC BY 3.0</a>, via Wikimedia Commons</p>
-            <p>Logotipo de CSS: <a href="https://commons.wikimedia.org/wiki/File:CSS3_logo_and_wordmark.svg" target="_blank">Rudloff</a>, <a href="https://creativecommons.org/licenses/by/3.0" target="_blank">CC BY 3.0</a>, via Wikimedia Commons</p>
-            <p>Logotipo de JS: <a href="https://commons.wikimedia.org/wiki/File:Unofficial_JavaScript_logo_2.svg" target="_blank">Christopher Williams</a>, Public domain, via Wikimedia Commons - Cambios: esquinas redondeadas</p>
-        </div>
-        </p>
-        
     </footer>
-    <script src="js/carousel.js"></script>
     <script src="js/dropdown.js"></script>
     <script src="js/hamburger.js"></script>
 </body>
