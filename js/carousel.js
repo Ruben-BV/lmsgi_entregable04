@@ -3,6 +3,9 @@ let slides = document.querySelectorAll(".slide");
 let nextButton = document.getElementById("next");
 let prevButton = document.getElementById("prev");
 let dots = document.querySelectorAll(".carousel-nav .dots li");
+let dotA = document.querySelector(".carousel .carousel-nav .dots .dotA");
+let dotB = document.querySelector(".carousel .carousel-nav .dots .dotB");
+let dotC = document.querySelector(".carousel .carousel-nav .dots .dotC");
 
 let indexActualSlide = 0;
 let lengthSlides = slides.length -1;
@@ -45,5 +48,20 @@ function showPrev() {
     showActualSlide(index);
 }
 
+function showSlideA() {
+    showActualSlide(0);
+}
+
+function showSlideB() {
+    showActualSlide(1);
+}
+
+function showSlideC() {
+    showActualSlide(2);
+}
+
 prev.addEventListener("click", showPrev);
 next.addEventListener("click", showNext);
+dotA.addEventListener("click", showSlideA);
+dotB.addEventListener("click", showSlideB);
+dotC.addEventListener("click", showSlideC);
