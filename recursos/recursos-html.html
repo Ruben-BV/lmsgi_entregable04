@@ -3,56 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería de recursos HTML-CSS-JS</title>
+    <title>Recursos HTML</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/styles_recursos.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles_recursos.css">
 </head>
 <body>
     <header>
         <div class="header-container">
             <h1>Recursos de <span class="orange">HTML</span>, <span class="blue">CSS</span> y <span class="yellow">JS</span></h1>
-            <button id="hamburger" class="hamburger"><img src="assets/burger.svg" alt="Hamburger menu icon"></button>
+            <button id="hamburger" class="hamburger"><img src="../assets/burger.svg" alt="Hamburger menu icon"></button>
             <nav id="nav">
-                <button id="exit" class="exit"><img src="assets/exit.svg" alt="Menu Exit"></button>
+                <button id="exit" class="exit"><img src="../assets/exit.svg" alt="Menu Exit"></button>
                 <ul class="menu">
-                    <li><a href="index.html" class="menu-button underlined-orange">Inicio</a></li>
+                    <li><a href="../index.html" class="menu-button">Inicio</a></li>
                     <div id="dropdownContainer" class="dropdown-container">
-                        <li class="dropdown-button"><a href="recursos.html" class="menu-button">Recursos</a></li>
+                        <li class="dropdown-button menu-button underlined-orange"><a href="../recursos.html" class="menu-button">Recursos</a></li>
                         <div id="dropdown" class="dropdown hidden">
-                            <a href="recursos/recursos-html.html" class="dropdown-button-html">HTML</a>
-                            <a href="recursos/recursos-css.html" class="dropdown-button-css">CSS</a>
-                            <a href="recursos/recursos-js.html" class="dropdown-button-js">JavaScript</a>
+                            <a href="recursos-html.html" class="dropdown-button-html">HTML</a>
+                            <a href="recursos-css.html" class="dropdown-button-css">CSS</a>
+                            <a href="recursos-js.html" class="dropdown-button-js">JavaScript</a>
                         </div>
                     </div>
-                    <li><a href="contacto.html" class="menu-button">Contacto</a></li>
+                    <li><a href="../contacto.html" class="menu-button">Contacto</a></li>
                 </ul>
             </nav>
         </div>
         <hr>
     </header>
     <main>
-        <div class="gallery">
-            <div class="gallery-item">
-                <a href="recursos/recursos-html.html">
-                    <img src="assets/HTML5_logo_black.svg" alt="Logotipo de HTML">
-                    <h3>Recursos de HTML</h3>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <a href="recursos/recursos-css.html">
-                    <img src="assets/CSS3_logo_and_wordmark.svg" alt="Logotipo de CSS">
-                    <h3>Recursos de JavaScript</h3>
-                </a>
-            </div>
-            <div class="gallery-item gallery-item-03">
-                <a href="recursos/recursos-js.html">
-                    <img src="assets/Unofficial_JavaScript_logo_2.svg" alt="Logotipo de JS">
-                    <h3>Recursos de JavaScript</h3>
-                </a>
-            </div>
+        <div class="main-container">
+            <h2>Recursos de HTML</h2>
+            <section>
+                <h3>Título del artículo</h3>
+                <article>
+                    <p>Esto es un artículo de prueba</p>
+                </article>
+            </section>
         </div>
     </main>
     <footer>
@@ -67,8 +56,7 @@
         </p>
         
     </footer>
-    <script src="js/carousel.js"></script>
-    <script src="js/dropdown.js"></script>
-    <script src="js/hamburger.js"></script>
+    <script src="../js/dropdown.js"></script>
+    <script src="../js/hamburger.js"></script>
 </body>
 </html>
