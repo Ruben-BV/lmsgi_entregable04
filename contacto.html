@@ -37,7 +37,55 @@
         <div class="main-container">
             <h2>Contacto</h2>
             <p class="p-h2">A través del siguiente formulario puedes enviarnos tus preguntas y sugerencias:</p>
-            <form action=""></form>
+            <form action="" method="post">
+                <fieldset class="person">
+                    <div id="name">
+                        <label for="contact-person">Persona de contacto<span class="orange">*</span></label>
+                        <div class="name-second-line">
+                            <input id="contact-person" class="field" type="text" placeholder="Nombre y apellidos" minlength="2" maxlength="50" required />
+                            <div id="form-of-address">
+                                <input id="sra-option" type="radio" name="form-of-address">
+                                <label for="sra-option">Sra.</label>
+                                <input id="sr-option" type="radio" name="form-of-address">
+                                <label for="sr-option">Sr.</label>
+                            </div>
+                        </div>
+                        <p id="error-contact-person" class="error"></p>
+                    </div>
+                </fieldset>
+                <fieldset class="age-ocupation">
+                    <div id="age-container">
+                        <label for="age">Edad</label>
+                        <input type="number" id="age" class="field" name="age" min="5" max="100" />
+                    </div>
+                    <div id="occupation-container">
+                        <label for="ocupation">Ocupación</label>
+                        <select id="ocupation" name="ocupation" required>
+                            <option value="" disabled selected>Selecciona tu ocupación</option>
+                            <option value="activo">Trabajador en activo</option>
+                            <option value="desempleado">Desempleado</option>
+                            <option value="estudiante">Estudiante</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset id="email-address">
+                    <label for="email">Correo electrónico<span class="orange">*</span></label>
+                    <input id="email" class="field" name="email" type="email" placeholder="Ej.: email@email.com" maxlength="50" required />
+                    <p class="error" id="error-email"></p>
+                </fieldset>
+                <fieldset id="subject-fieldset">
+                    <label for="subject">Asunto<span class="orange">*</span></label>
+                    <input id="subject" class="field" type="text" placeholder="Escribe aquí el asunto de tu mensaje" minlength="2" maxlength="50" required />
+                    <p id="error-subject" class="error"></p>
+                </fieldset>
+                <fieldset id="message-fieldset">
+                    <label for="message">Mensaje<span class="orange">*</span></label>
+                    <textarea id="message" name="message" placeholder="Escribe aquí tu mensaje"></textarea>
+                </fieldset>
+                <p>Recuerda que los campos con asterisco (<span class="orange">*</span>) son obligatorios</p>
+                <input id="send" class="send-button" type="submit" value="Enviar">
+            </form>
         </div>
     </main>
     <footer>
@@ -46,5 +94,6 @@
     </footer>
     <script src="js/dropdown.js"></script>
     <script src="js/hamburger.js"></script>
+    <script src="js/form_validation.js"></script>
 </body>
 </html>

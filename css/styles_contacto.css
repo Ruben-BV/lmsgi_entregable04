@@ -17,6 +17,128 @@ h2 {
     margin-top: 15px;
 }
 
+form {
+    width: 60%;
+    max-width: 800px;
+    margin: 15px auto 0 auto;
+}
+
+.orange {
+    color: #EC6231;
+}
+
+fieldset {
+    border: none;
+}
+
+#name > label {
+    display: block;
+}
+
+.name-second-line {
+    display: flex;
+}
+
+.field {
+    border: 2px solid #999999;
+    border-radius: 5px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+select {
+    border: 2px solid #999999;
+    border-radius: 5px;
+    padding-left: 10px;
+    height: 30px;
+}
+
+.person,
+.age-ocupation {
+    display: flex;
+    justify-content: space-between;
+}
+
+#name {
+    width: 100%;
+}
+
+.name-second-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contact-person {
+    width: 70%;
+    margin-top: 5px;
+}
+
+#form-of-address {
+    width: 25%;
+    text-align: right;
+}
+
+#age-container {
+    width: 20%;
+}
+
+#occupation-container {
+    width: 70%;
+}
+
+#occupation-container > select,
+#age-container > input,
+#email-address > input,
+#subject-fieldset > input {
+    width: 100%;
+    margin-top: 5px;
+}
+
+#name > label,
+#occupation-container > label,
+#age-container > label,
+#email-address > label,
+#subject-fieldset > label,
+#message-fieldset > label {
+    display: block;
+    margin-top: 15px;
+}
+
+textarea {
+    width: 100%;
+    resize: vertical;
+    border: 2px solid #999999;
+    border-radius: 5px;
+    min-height: 100px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+form > p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.send-button {
+    all: unset;
+    width: 100%;
+    height: 40px;
+    border: 2px solid #333333;
+    color: #333333;
+    font-size: 24px;
+    border-radius: 15px;
+    background-color: #FCFCFC;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.send-button:hover {
+    border-color: #EC6231;
+    color: #EC6231;
+    background-color: #FCFCFC;
+}
+
 
 @media screen and (max-width: 1050px) {
     
@@ -26,5 +148,32 @@ h2 {
 
     h2 {
         margin-top: 20px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    form {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 475px) {
+
+    .name-second-line {
+        display: block;
+    }
+    
+    #contact-person {
+        display: block;
+        width: 100%;
+    }
+    
+    #form-of-address {
+        margin-top: 15px;
+        display: block;
+        width: 100%;
+        text-align: center;
     }
 }
