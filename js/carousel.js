@@ -60,8 +60,8 @@ function showSlideC() {
     showActualSlide(2);
 }
 
-prev.addEventListener("click", showPrev);
-next.addEventListener("click", showNext);
+prevButton.addEventListener("click", showPrev);
+nextButton.addEventListener("click", showNext);
 dotA.addEventListener("click", showSlideA);
 dotB.addEventListener("click", showSlideB);
 dotC.addEventListener("click", showSlideC);
