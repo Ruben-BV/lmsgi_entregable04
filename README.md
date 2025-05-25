@@ -26,7 +26,24 @@ El proyecto se enfoca en el desarrollo técnico de la propia web y no en los con
   </a>
 </p>
 
-## Capturas de pantalla
+## Capturas de pantalla:
+Página de inicio:
 <p align="center">
-	  <img src="" width="25%"/>
+	  <img src="https://github.com/Ruben-BV/lmsgi_entregable04/blob/main/assets/Screenshot_001.jpg" width="75%"/>
+</p>
+Galería para selección del tema de los recursos, con menú de navegación desplegado:
+<p align="center">
+	  <img src="https://github.com/Ruben-BV/lmsgi_entregable04/blob/main/assets/Screenshot_003.jpg" width="75%"/>
+</p>
+Galería "Recursos" con diseño adapatado a pantalla pequeña:
+<p align="center">
+	  <img src="https://github.com/Ruben-BV/lmsgi_entregable04/blob/main/assets/Screenshot_002.jpg" width="50%"/>
+</p>
+"Hamburger menu" desplegado:
+<p align="center">
+	  <img src="https://github.com/Ruben-BV/lmsgi_entregable04/blob/main/assets/Screenshot_004.jpg" width="50%"/>
+</p>
+Formulario de contacto:
+<p align="center">
+	  <img src="https://github.com/Ruben-BV/lmsgi_entregable04/blob/main/assets/Screenshot_005.jpg" width="75%"/>
 </p>
